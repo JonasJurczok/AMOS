@@ -28,43 +28,43 @@ You have to get used to more or less complex and confusing tools that will help 
 
 AMOS is aimed at solving these problems by providing an integrated toolset from start to finish.
 
-!Important!: This does **NOT** mean any fancy UI. 'AMOS' will (in the beginning) just provide simple tools and libraries that other tool creators
+!Important!: This does **NOT** mean any fancy UI. `AMOS` will (in the beginning) just provide simple tools and libraries that other tool creators
 (like A3S or PlayWithSix) can build on to ease addon distribution for them.
 
 The plan is that in the future the process looks like this:
 
 ### As the addon creator
 
-You use a tool based on 'AMOS' to pack your addon in a standard way.
-Then you use 'AMOS' to push the newest version of your addon to a remote distribution hub (this can be your own or some larger, 
+You use a tool based on `AMOS` to pack your addon in a standard way.
+Then you use `AMOS` to push the newest version of your addon to a remote distribution hub (this can be your own or some larger, 
 more centralized one).
 
 ### As the addon manager for a community
 
-You use 'AMOS' to get a list of all available updates for all addons you have installed.
-You select the addons you want to upgrade from said list and then 'AMOS' will do the downloading, verification and unpacking for you and also
+You use `AMOS` to get a list of all available updates for all addons you have installed.
+You select the addons you want to upgrade from said list and then `AMOS` will do the downloading, verification and unpacking for you and also
 provide you with a shortcut to start your server.
 
 ### As the coomunity member
-You can use 'AMOS' to get the latest version of all addons as specified on the server you want to play on.
+You can use `AMOS` to get the latest version of all addons as specified on the server you want to play on.
 
 ## But.. Why?
 
-The process is taken from [Maven](https://maven.apache.org/) or basically every other 'Dependency Management' tool known in Software engineering today.
+The process is taken from [Maven](https://maven.apache.org/) or basically every other `Dependency Management` tool known in Software engineering today.
 The interesting aspect of this is that it removes the need for manual tracking and downloading of dependencies (addons, libs) for all involved parties.
 
 This specifically also enables some interesting use cases.
 Lets say you are developing a weapon pack like [RHS](http://www.rhsmods.org/). You can distribute it as a huge group of items and thus force
 everyone to use all of it.
 
-With the 'AMOS' system you could provide every single gun as its own addon and then also provide a grouped addon set ("RHS ALL Weapons") as a convenience.
+With the `AMOS` system you could provide every single gun as its own addon and then also provide a grouped addon set ("RHS ALL Weapons") as a convenience.
 Of course this also works for other dependencies. E.g. some Weapons depend on files created for other guns (if I remember correctly some RHS assault rifles all depend
-on the same M4 config file). With the 'AMOS' system you could distribute said dependency (the config file) as a single artifact. Then all your
+on the same M4 config file). With the `AMOS` system you could distribute said dependency (the config file) as a single artifact. Then all your
 other guns can have a dependency on it and will be available for your users when they want to use your gun.
 
 With this the whole addon system becomes much more flexible and we remove one important step.
 Currenlty some communities are manually packing parts of Addons into their own, custom groups. Some also rename files (make everything lowercase).
-This makes it virtually impossible to synchronize addon sets over multiple communities. 'AMOS' tries to fix this by providing an easy, integrated
+This makes it virtually impossible to synchronize addon sets over multiple communities. `AMOS` tries to fix this by providing an easy, integrated
 approach to addon distribution and dependency management.
 
 ## Current State
