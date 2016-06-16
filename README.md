@@ -5,6 +5,7 @@ Rethinking addon distribution.
 
 Currently distributing and downloading mods is a very tedious process.
 There are some pages like [Armaholic](http://www.armaholic.com/) that also function as distribution hubs.
+![Current situation](doc/current situation.png)
 
 ### As the addon creator
 You have to build your addon with whatever tools you prefer and then distribute it as a zip file. 
@@ -32,6 +33,7 @@ AMOS is aimed at solving these problems by providing an integrated toolset from 
 (like A3S or PlayWithSix) can build on to ease addon distribution for them.
 
 The plan is that in the future the process looks like this:
+![Amos situation](doc/amos situation.png)
 
 ### As the addon creator
 
